@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location (update with your actual GitHub Pages URL)
+Sitemap: https://yourusername.github.io/wardat-almanazel/sitemap.xml
+
+
+

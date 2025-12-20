@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="وردة المنازل للمقاولات العامة - شركة مقاولات عامة رائدة في المملكة العربية السعودية متخصصة في المشاريع المدنية والكهربائية والكهرو ميكانيكية والاتصالات."
+    />
+    <meta
+      name="keywords"
+      content="general contracting, construction, Saudi Arabia, civil construction, electrical works, HVAC, telecommunication, infrastructure"
+    />
+    <meta name="author" content="Wardat Almanazel General Contracting" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="وردة المنازل للمقاولات العامة" />
+    <meta
+      property="og:description"
+      content="شركة مقاولات عامة رائدة في المملكة العربية السعودية"
+    />
+
+    <title>
+      وردة المنازل للمقاولات العامة | خدمات البناء والمقاولات في المملكة العربية
+      السعودية
+    </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <i class="fas fa-building"></i>
+            <span>Wardat Almanazel</span>
+          </div>
+          <button
+            class="mobile-menu-toggle"
+            id="mobileMenuToggle"
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li>
+              <a href="#home" class="nav-link" data-i18n="nav.home">الرئيسية</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link" data-i18n="nav.about">من نحن</a>
+            </li>
+            <li>
+              <a href="#services" class="nav-link" data-i18n="nav.services"
+                >الخدمات</a
+              >
+            </li>
+            <li>
+              <a href="#expertise" class="nav-link" data-i18n="nav.expertise"
+                >الخبرات</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link" data-i18n="nav.contact"
+                >اتصل بنا</a
+              >
+            </li>
+          </ul>
+          <div class="language-switcher">
+            <button class="lang-btn" id="langBtn" aria-label="Switch language">
+              <i class="fas fa-globe"></i>
+              <span id="currentLang">العربية</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 data-i18n="hero.title">وردة المنازل للمقاولات العامة</h1>
+          <p class="hero-tagline" data-i18n="hero.tagline">
+            بناء التميز في جميع أنحاء المملكة العربية السعودية
+          </p>
+          <p class="hero-description" data-i18n="hero.description">
+            شريكك الموثوق للحلول الشاملة في البناء والمقاولات
+          </p>
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.cta"
+            >تواصل معنا</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro-content">
+          <h2 data-i18n="intro.title">مرحباً بكم في وردة المنازل</h2>
+          <p data-i18n="intro.text">
+            نحن شركة مقاولات عامة رائدة مسجلة في المملكة العربية السعودية،
+            ملتزمون بتقديم خدمات بناء ومقاولات استثنائية عبر قطاعات متعددة. مع
+            التزام قوي بالجودة والسلامة وإتمام المشاريع في الوقت المحدد، أثبتنا
+            أنفسنا كشريك موثوق لمشاريع صناعية ومدنية وكهربائية وكهرو ميكانيكية
+            واتصالات في جميع أنحاء المملكة.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Services Highlights -->
+    <section class="key-services">
+      <div class="container">
+        <h2 data-i18n="keyServices.title">خدماتنا الأساسية</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hard-hat"></i>
+            </div>
+            <h3 data-i18n="keyServices.civil.title">البناء المدني</h3>
+            <p data-i18n="keyServices.civil.desc">
+              خدمات شاملة للبناء المدني والصيانة
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 data-i18n="keyServices.electrical.title">الأعمال الكهربائية</h3>
+            <p data-i18n="keyServices.electrical.desc">
+              حلول كهربائية وكهرو ميكانيكية احترافية
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-satellite-dish"></i>
+            </div>
+            <h3 data-i18n="keyServices.telecom.title">الاتصالات</h3>
+            <p data-i18n="keyServices.telecom.desc">
+              خدمات تركيب الاتصالات وإنشاء الأبراج
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 data-i18n="keyServices.maintenance.title">الصيانة</h3>
+            <p data-i18n="keyServices.maintenance.desc">
+              خدمات صيانة وتجديد متخصصة
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+      <div class="container">
+        <h2 data-i18n="whyChooseUs.title">لماذا تختارنا</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3 data-i18n="whyChooseUs.quality.title">التميز في الجودة</h3>
+            <p data-i18n="whyChooseUs.quality.desc">
+              نحافظ على أعلى المعايير في جميع مشاريعنا، مما يضمن المتانة والتميز
+              في كل التفاصيل.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 data-i18n="whyChooseUs.safety.title">السلامة أولاً</h3>
+            <p data-i18n="whyChooseUs.safety.desc">
+              السلامة هي أولويتنا القصوى. نطبق بروتوكولات سلامة صارمة لحماية
+              قوتنا العاملة وعملائنا.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3 data-i18n="whyChooseUs.timely.title">
+              التسليم في الوقت المحدد
+            </h3>
+            <p data-i18n="whyChooseUs.timely.desc">
+              نفهم أهمية المواعيد النهائية ونقوم بتسليم المشاريع باستمرار في
+              الوقت المحدد وفي حدود الميزانية.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 data-i18n="whyChooseUs.commitment.title">الالتزام</h3>
+            <p data-i18n="whyChooseUs.commitment.desc">
+              التزامنا برضا العملاء يدفع كل ما نقوم به، من التخطيط إلى إتمام
+              المشروع.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 data-i18n="about.title">من نحن</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3 data-i18n="about.overview.title">نظرة عامة على الشركة</h3>
+            <p data-i18n="about.overview.text">
+              وردة المنازل للمقاولات العامة هي شركة مقاولات عامة مسجلة في
+              المملكة العربية السعودية، متخصصة في خدمات البناء والمقاولات
+              الشاملة عبر قطاعات متعددة. تمتد خبرتنا لتشمل المشاريع الصناعية
+              والمدنية والكهربائية والكهرو ميكانيكية والاتصالات في جميع أنحاء
+              المملكة.
+            </p>
+
+            <h3 data-i18n="about.commitment.title">التزامنا</h3>
+            <p data-i18n="about.commitment.text">
+              نحن ملتزمون بتقديم نتائج استثنائية من خلال:
+            </p>
+            <ul class="about-list">
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span data-i18n="about.commitmentList.quality"
+                  >معايير جودة لا هوادة فيها</span
+                >
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span data-i18n="about.commitmentList.safety"
+                  >بروتوكولات سلامة صارمة</span
+                >
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span data-i18n="about.commitmentList.timelines"
+                  >الالتزام بجداول المشاريع</span
+                >
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span data-i18n="about.commitmentList.execution"
+                  >التميز في التنفيذ</span
+                >
+              </li>
+            </ul>
+
+            <h3 data-i18n="about.strengths.title">نقاط قوتنا</h3>
+            <p data-i18n="about.strengths.text">
+              مع القدرة المالية القوية والقوى العاملة الخبيرة، لدينا الموارد
+              والخبرة للتعامل مع مشاريع بأي حجم. يجمع فريقنا بين المعرفة التقنية
+              والخبرة العملية لتقديم حلول تلبي وتتجاوز توقعات العملاء.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop"
+              alt="Modern construction site with cranes and buildings"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 data-i18n="services.title">خدماتنا</h2>
+        <p class="section-subtitle" data-i18n="services.subtitle">
+          حلول مقاولات شاملة لجميع احتياجات البناء الخاصة بك
+        </p>
+        <div class="services-container">
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3 data-i18n="services.items.civil.title">
+              البناء المدني والصيانة
+            </h3>
+            <p data-i18n="services.items.civil.desc">
+              خدمات بناء مدني كاملة تشمل بناء المباني وتطوير البنية التحتية
+              وبرامج الصيانة المستمرة.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3 data-i18n="services.items.electrical.title">
+              الأعمال الكهربائية والكهرو ميكانيكية
+            </h3>
+            <p data-i18n="services.items.electrical.desc">
+              تركيبات كهربائية احترافية وأنظمة توزيع الطاقة وحلول كهرو ميكانيكية
+              للمشاريع السكنية والتجارية والصناعية.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-wind"></i>
+            </div>
+            <h3 data-i18n="services.items.hvac.title">
+              أنظمة التدفئة والتهوية وتكييف الهواء
+            </h3>
+            <p data-i18n="services.items.hvac.desc">
+              حلول التدفئة والتهوية وتكييف الهواء المصممة للراحة المثلى وكفاءة
+              الطاقة.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-tower-broadcast"></i>
+            </div>
+            <h3 data-i18n="services.items.telecom.title">
+              تركيب الاتصالات وإنشاء الأبراج
+            </h3>
+            <p data-i18n="services.items.telecom.desc">
+              بنية تحتية اتصالات كاملة تشمل إنشاء الأبراج وتركيب الشبكات وخدمات
+              الصيانة.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3 data-i18n="services.items.equipment.title">
+              المعدات الثقيلة والخفيفة
+            </h3>
+            <p data-i18n="services.items.equipment.desc">
+              حلول معدات شاملة لمشاريع البناء بجميع الأحجام.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-city"></i>
+            </div>
+            <h3 data-i18n="services.items.buildings.title">
+              بناء المباني التجارية والسكنية
+            </h3>
+            <p data-i18n="services.items.buildings.desc">
+              تصميم وبناء المجمعات التجارية والمباني السكنية مع الهندسة
+              المعمارية الحديثة والانتهاءات عالية الجودة.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-road"></i>
+            </div>
+            <h3 data-i18n="services.items.roads.title">
+              بناء الطرق وطرق الوصول
+            </h3>
+            <p data-i18n="services.items.roads.desc">
+              بناء الطرق وتطوير البنية التحتية بما في ذلك طرق الوصول والطرق
+              السريعة والأعمال المدنية ذات الصلة.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-signal"></i>
+            </div>
+            <h3 data-i18n="services.items.towers.title">
+              أساسات أبراج الهواتف الخلوية وإنشاؤها
+            </h3>
+            <p data-i18n="services.items.towers.desc">
+              خدمات متخصصة لبناء أساسات أبراج الهواتف الخلوية وإنشاء الأبراج
+              بدقة وأمان.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-digging"></i>
+            </div>
+            <h3 data-i18n="services.items.trenching.title">
+              الحفر للكابلات والأنابيب
+            </h3>
+            <p data-i18n="services.items.trenching.desc">
+              خدمات حفر احترافية لتركيب الكابلات والأنابيب مع التخطيط والتنفيذ
+              المناسبين.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-pipe"></i>
+            </div>
+            <h3 data-i18n="services.items.sewerage.title">
+              أنظمة الصرف الصحي والأنابيب
+            </h3>
+            <p data-i18n="services.items.sewerage.desc">
+              تصميم وتركيب وصيانة أنظمة الصرف الصحي الكاملة بما في ذلك جميع
+              متطلبات الأنابيب.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-fire-extinguisher"></i>
+            </div>
+            <h3 data-i18n="services.items.firefighting.title">
+              تركيب مكافحة الحرائق
+            </h3>
+            <p data-i18n="services.items.firefighting.desc">
+              أنظمة سلامة من الحرائق شاملة بما في ذلك تركيب وصيانة معدات مكافحة
+              الحرائق.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-tractor"></i>
+            </div>
+            <h3 data-i18n="services.items.earthmoving.title">
+              مشاريع أعمال الحفر والردم
+            </h3>
+            <p data-i18n="services.items.earthmoving.desc">
+              مشاريع حفر وردم واسعة النطاق مع معدات حديثة ومشغلين ذوي خبرة.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-trailer"></i>
+            </div>
+            <h3 data-i18n="services.items.temporary.title">المرافق المؤقتة</h3>
+            <p data-i18n="services.items.temporary.desc">
+              تصميم وبناء المرافق المؤقتة لمواقع البناء ومتطلبات المشروع.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3 data-i18n="services.items.demolition.title">أعمال الهدم</h3>
+            <p data-i18n="services.items.demolition.desc">
+              خدمات هدم آمنة وفعالة مع التخطيط المناسب والاعتبارات البيئية.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h3 data-i18n="services.items.maintenance.title">
+              الصيانة والتجديد
+            </h3>
+            <p data-i18n="services.items.maintenance.desc">
+              خدمات صيانة وتجديد شاملة للحفاظ على مرافقك في حالة مثالية.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3 data-i18n="services.items.catering.title">
+              التموين وإدارة المرافق
+            </h3>
+            <p data-i18n="services.items.catering.desc">
+              خدمات تموين احترافية وحلول إدارة مرافق شاملة.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-item-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 data-i18n="services.items.support.title">خدمات الدعم</h3>
+            <p data-i18n="services.items.support.desc">
+              خدمات دعم إضافية لتكمل احتياجات البناء والتشغيل الخاصة بك.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise / Divisions Section -->
+    <section id="expertise" class="expertise">
+      <div class="container">
+        <h2 data-i18n="expertise.title">خبراتنا وأقسامنا</h2>
+        <p class="section-subtitle" data-i18n="expertise.subtitle">
+          أقسام متخصصة تقدم التميز في مجالاتها
+        </p>
+        <div class="divisions-grid">
+          <div class="division-card">
+            <div class="division-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 data-i18n="expertise.electrical.title">قسم الكهرباء</h3>
+            <p data-i18n="expertise.electrical.desc">
+              يتخصص قسم الكهرباء لدينا في حلول كهربائية شاملة تشمل:
+            </p>
+            <ul
+              class="division-list"
+              data-i18n-list="expertise.electrical.items"
+            >
+              <li data-i18n="expertise.electrical.items.0">
+                مشاريع كهربائية مفتاحية
+              </li>
+              <li data-i18n="expertise.electrical.items.1">
+                بناء وتركيب المحطات الفرعية
+              </li>
+              <li data-i18n="expertise.electrical.items.2">
+                الأعمال الكهربائية الصناعية
+              </li>
+              <li data-i18n="expertise.electrical.items.3">
+                التركيبات الكهربائية السكنية
+              </li>
+              <li data-i18n="expertise.electrical.items.4">
+                أنظمة توزيع الطاقة
+              </li>
+            </ul>
+          </div>
+          <div class="division-card">
+            <div class="division-icon">
+              <i class="fas fa-hard-hat"></i>
+            </div>
+            <h3 data-i18n="expertise.civil.title">قسم البناء المدني</h3>
+            <p data-i18n="expertise.civil.desc">
+              يتعامل قسم البناء المدني لدينا مع مجموعة واسعة من مشاريع البنية
+              التحتية:
+            </p>
+            <ul class="division-list" data-i18n-list="expertise.civil.items">
+              <li data-i18n="expertise.civil.items.0">تطوير البنية التحتية</li>
+              <li data-i18n="expertise.civil.items.1">أعمال الحفر والردم</li>
+              <li data-i18n="expertise.civil.items.2">
+                أعمال مدنية للمحطات الفرعية
+              </li>
+              <li data-i18n="expertise.civil.items.3">تجديد وترميم المباني</li>
+              <li data-i18n="expertise.civil.items.4">إعداد وتطوير الموقع</li>
+            </ul>
+          </div>
+          <div class="division-card">
+            <div class="division-icon">
+              <i class="fas fa-satellite-dish"></i>
+            </div>
+            <h3 data-i18n="expertise.telecom.title">قسم الاتصالات</h3>
+            <p data-i18n="expertise.telecom.desc">
+              يوفر قسم الاتصالات لدينا حلول اتصالات متطورة:
+            </p>
+            <ul class="division-list" data-i18n-list="expertise.telecom.items">
+              <li data-i18n="expertise.telecom.items.0">
+                إنشاء وتركيب الأبراج
+              </li>
+              <li data-i18n="expertise.telecom.items.1">
+                شبكات الألياف البصرية (OFC)
+              </li>
+              <li data-i18n="expertise.telecom.items.2">خدمات صيانة GSM</li>
+              <li data-i18n="expertise.telecom.items.3">تطوير بنية الشبكة</li>
+              <li data-i18n="expertise.telecom.items.4">
+                تركيب معدات الاتصالات
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 data-i18n="contact.title">اتصل بنا</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">
+          تواصل معنا لاحتياجات البناء والمقاولات الخاصة بك
+        </p>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3 data-i18n="contact.location">الموقع</h3>
+                <p>المملكة العربية السعودية</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h3 data-i18n="contact.phone">الهاتف</h3>
+                <p>+966 XX XXX XXXX</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h3 data-i18n="contact.email">البريد الإلكتروني</h3>
+                <p>info@wardatalmanazel.com</p>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/966XXXXXXXXX"
+              class="whatsapp-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-whatsapp"></i>
+              <span data-i18n="contact.whatsapp">تواصل عبر واتساب</span>
+            </a>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.form.name"
+                >الاسم
+                <span class="required" data-i18n="contact.form.required"
+                  >*</span
+                ></label
+              >
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.form.email"
+                >البريد الإلكتروني
+                <span class="required" data-i18n="contact.form.required"
+                  >*</span
+                ></label
+              >
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone" data-i18n="contact.form.phone">الهاتف</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.form.message"
+                >الرسالة
+                <span class="required" data-i18n="contact.form.required"
+                  >*</span
+                ></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-i18n="contact.form.submit"
+            >
+              إرسال الرسالة
+            </button>
+            <div class="form-message" id="formMessage"></div>
+          </form>
+        </div>
+        <div class="map-container">
+          <h3 data-i18n="contact.mapTitle">موقعنا على الخريطة</h3>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.1234567890123!2d39.28795378901234!3d21.57285499572754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDM0JzIyLjMiTiAzOcKwMTcnMjAuOSJF!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Company Location"
+            ></iframe>
+            <a
+              href="https://www.google.com/maps?q=21.57285499572754,39.28914260864258&z=17&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="map-link-btn"
+            >
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="contact.openInMaps">افتح في Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-building"></i>
+              <span>Wardat Almanazel</span>
+            </div>
+            <p data-i18n="footer.description">
+              شركة مقاولات عامة رائدة في المملكة العربية السعودية، تقدم التميز
+              في خدمات البناء والمقاولات عبر قطاعات متعددة.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3 data-i18n="footer.quickLinks">روابط سريعة</h3>
+            <ul class="footer-links">
+              <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
+              <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+              <li><a href="#services" data-i18n="nav.services">الخدمات</a></li>
+              <li>
+                <a href="#expertise" data-i18n="nav.expertise">الخبرات</a>
+              </li>
+              <li><a href="#contact" data-i18n="nav.contact">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 data-i18n="footer.services">الخدمات</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#services" data-i18n="keyServices.civil.title"
+                  >البناء المدني</a
+                >
+              </li>
+              <li>
+                <a href="#services" data-i18n="keyServices.electrical.title"
+                  >الأعمال الكهربائية</a
+                >
+              </li>
+              <li>
+                <a href="#services" data-i18n="keyServices.telecom.title"
+                  >الاتصالات</a
+                >
+              </li>
+              <li>
+                <a href="#services" data-i18n="keyServices.maintenance.title"
+                  >الصيانة</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 data-i18n="footer.connect">تواصل معنا</h3>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter" class="social-link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="Instagram" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> وردة المنازل للمقاولات العامة.
+            <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
