@@ -22,7 +22,7 @@ const translations = {
     // Introduction
     intro: {
       title: "مرحباً بكم في وردة المنازل",
-      text: "نحن شركة مقاولات عامة رائدة مسجلة في المملكة العربية السعودية، ملتزمون بتقديم خدمات بناء ومقاولات استثنائية عبر قطاعات متعددة. مع التزام قوي بالجودة والسلامة وإتمام المشاريع في الوقت المحدد، أثبتنا أنفسنا كشريك موثوق لمشاريع صناعية ومدنية وكهربائية وكهرو ميكانيكية واتصالات في جميع أنحاء المملكة.",
+      text: "نحن شركة مقاولات عامة رائدة مسجلة في المملكة العربية السعودية، ملتزمون بتقديم خدمات بناء ومقاولات استثنائية عبر قطاعات متعددة. مع التزام قوي بالجودة والسلامة وإتمام المشاريع في الوقت المحدد، أثبتنا أنفسنا كشريك موثوق لمشاريع صناعية ومدنية وكهربائية وكهرو ميكانيكية في جميع أنحاء المملكة.",
     },
     // Key Services
     keyServices: {
@@ -34,10 +34,6 @@ const translations = {
       electrical: {
         title: "الأعمال الكهربائية",
         desc: "حلول كهربائية وكهرو ميكانيكية احترافية",
-      },
-      telecom: {
-        title: "الاتصالات",
-        desc: "خدمات تركيب الاتصالات وإنشاء الأبراج",
       },
       maintenance: {
         title: "الصيانة",
@@ -69,7 +65,7 @@ const translations = {
       title: "من نحن",
       overview: {
         title: "نظرة عامة على الشركة",
-        text: "وردة المنازل للمقاولات العامة هي شركة مقاولات عامة مسجلة في المملكة العربية السعودية، متخصصة في خدمات البناء والمقاولات الشاملة عبر قطاعات متعددة. تمتد خبرتنا لتشمل المشاريع الصناعية والمدنية والكهربائية والكهرو ميكانيكية والاتصالات في جميع أنحاء المملكة.",
+        text: "وردة المنازل للمقاولات العامة هي شركة مقاولات عامة مسجلة في المملكة العربية السعودية، متخصصة في خدمات البناء والمقاولات الشاملة عبر قطاعات متعددة. تمتد خبرتنا لتشمل المشاريع الصناعية والمدنية والكهربائية والكهرو ميكانيكية في جميع أنحاء المملكة.",
       },
       commitment: {
         title: "التزامنا",
@@ -103,41 +99,13 @@ const translations = {
           title: "أنظمة التدفئة والتهوية وتكييف الهواء",
           desc: "حلول التدفئة والتهوية وتكييف الهواء المصممة للراحة المثلى وكفاءة الطاقة.",
         },
-        telecom: {
-          title: "تركيب الاتصالات وإنشاء الأبراج",
-          desc: "بنية تحتية اتصالات كاملة تشمل إنشاء الأبراج وتركيب الشبكات وخدمات الصيانة.",
-        },
-        equipment: {
-          title: "المعدات الثقيلة والخفيفة",
-          desc: "حلول معدات شاملة لمشاريع البناء بجميع الأحجام.",
-        },
         buildings: {
           title: "بناء المباني التجارية والسكنية",
           desc: "تصميم وبناء المجمعات التجارية والمباني السكنية مع الهندسة المعمارية الحديثة والانتهاءات عالية الجودة.",
         },
-        roads: {
-          title: "بناء الطرق وطرق الوصول",
-          desc: "بناء الطرق وتطوير البنية التحتية بما في ذلك طرق الوصول والطرق السريعة والأعمال المدنية ذات الصلة.",
-        },
-        towers: {
-          title: "أساسات أبراج الهواتف الخلوية وإنشاؤها",
-          desc: "خدمات متخصصة لبناء أساسات أبراج الهواتف الخلوية وإنشاء الأبراج بدقة وأمان.",
-        },
-        trenching: {
-          title: "الحفر للكابلات والأنابيب",
-          desc: "خدمات حفر احترافية لتركيب الكابلات والأنابيب مع التخطيط والتنفيذ المناسبين.",
-        },
-        sewerage: {
-          title: "أنظمة الصرف الصحي والأنابيب",
-          desc: "تصميم وتركيب وصيانة أنظمة الصرف الصحي الكاملة بما في ذلك جميع متطلبات الأنابيب.",
-        },
         firefighting: {
           title: "تركيب مكافحة الحرائق",
           desc: "أنظمة سلامة من الحرائق شاملة بما في ذلك تركيب وصيانة معدات مكافحة الحرائق.",
-        },
-        earthmoving: {
-          title: "مشاريع أعمال الحفر والردم",
-          desc: "مشاريع حفر وردم واسعة النطاق مع معدات حديثة ومشغلين ذوي خبرة.",
         },
         temporary: {
           title: "المرافق المؤقتة",
@@ -181,21 +149,9 @@ const translations = {
         desc: "يتعامل قسم البناء المدني لدينا مع مجموعة واسعة من مشاريع البنية التحتية:",
         items: [
           "تطوير البنية التحتية",
-          "أعمال الحفر والردم",
           "أعمال مدنية للمحطات الفرعية",
           "تجديد وترميم المباني",
           "إعداد وتطوير الموقع",
-        ],
-      },
-      telecom: {
-        title: "قسم الاتصالات",
-        desc: "يوفر قسم الاتصالات لدينا حلول اتصالات متطورة:",
-        items: [
-          "إنشاء وتركيب الأبراج",
-          "شبكات الألياف البصرية (OFC)",
-          "خدمات صيانة GSM",
-          "تطوير بنية الشبكة",
-          "تركيب معدات الاتصالات",
         ],
       },
     },
@@ -237,7 +193,7 @@ const translations = {
       title:
         "وردة المنازل للمقاولات العامة | خدمات البناء والمقاولات في المملكة العربية السعودية",
       description:
-        "وردة المنازل للمقاولات العامة - شركة مقاولات عامة رائدة في المملكة العربية السعودية متخصصة في المشاريع المدنية والكهربائية والكهرو ميكانيكية والاتصالات.",
+        "وردة المنازل للمقاولات العامة - شركة مقاولات عامة رائدة في المملكة العربية السعودية متخصصة في المشاريع المدنية والكهربائية والكهرو ميكانيكية.",
       ogTitle: "وردة المنازل للمقاولات العامة",
       ogDescription: "شركة مقاولات عامة رائدة في المملكة العربية السعودية",
     },
@@ -262,7 +218,7 @@ const translations = {
     // Introduction
     intro: {
       title: "Welcome to Wardat Almanazel",
-      text: "We are a leading general contracting company registered in Saudi Arabia, dedicated to delivering exceptional construction and contracting services across multiple sectors. With a strong commitment to quality, safety, and timely project completion, we have established ourselves as a trusted partner for industrial, civil, electrical, electromechanical, and telecommunication projects throughout the Kingdom.",
+      text: "We are a leading general contracting company registered in Saudi Arabia, dedicated to delivering exceptional construction and contracting services across multiple sectors. With a strong commitment to quality, safety, and timely project completion, we have established ourselves as a trusted partner for industrial, civil, electrical, and electromechanical projects throughout the Kingdom.",
     },
     // Key Services
     keyServices: {
@@ -274,10 +230,6 @@ const translations = {
       electrical: {
         title: "Electrical Works",
         desc: "Professional electrical and electromechanical solutions",
-      },
-      telecom: {
-        title: "Telecommunications",
-        desc: "Telecom installation and tower erection services",
       },
       maintenance: {
         title: "Maintenance",
@@ -309,7 +261,7 @@ const translations = {
       title: "About Us",
       overview: {
         title: "Company Overview",
-        text: "Wardat Almanazel General Contracting is a registered general contracting company in Saudi Arabia, specializing in comprehensive construction and contracting services across multiple sectors. Our expertise spans industrial, civil, electrical, electromechanical, and telecommunication projects throughout the Kingdom.",
+        text: "Wardat Almanazel General Contracting is a registered general contracting company in Saudi Arabia, specializing in comprehensive construction and contracting services across multiple sectors. Our expertise spans industrial, civil, electrical, and electromechanical projects throughout the Kingdom.",
       },
       commitment: {
         title: "Our Commitment",
@@ -344,41 +296,13 @@ const translations = {
           title: "HVAC Systems",
           desc: "Heating, Ventilating & Air Conditioning solutions designed for optimal comfort and energy efficiency.",
         },
-        telecom: {
-          title: "Telecommunication Installation & Tower Erection",
-          desc: "Complete telecom infrastructure including tower erection, network installation, and maintenance services.",
-        },
-        equipment: {
-          title: "Heavy & Light Equipment",
-          desc: "Comprehensive equipment solutions for construction projects of all sizes.",
-        },
         buildings: {
           title: "Commercial & Residential Buildings",
           desc: "Design and construction of commercial complexes and residential buildings with modern architecture and quality finishes.",
         },
-        roads: {
-          title: "Roads & Access Roads Construction",
-          desc: "Road construction and infrastructure development including access roads, highways, and related civil works.",
-        },
-        towers: {
-          title: "Cellular Tower Foundations & Erection",
-          desc: "Specialized services for cellular tower foundation construction and tower erection with precision and safety.",
-        },
-        trenching: {
-          title: "Trenching for Cables & Pipes",
-          desc: "Professional trenching services for cable and pipe installations with proper planning and execution.",
-        },
-        sewerage: {
-          title: "Sewerage Systems & Piping",
-          desc: "Complete sewerage system design, installation, and maintenance including all piping requirements.",
-        },
         firefighting: {
           title: "Fire Fighting Installation",
           desc: "Comprehensive fire safety systems including fire fighting equipment installation and maintenance.",
-        },
-        earthmoving: {
-          title: "Earth Moving Projects",
-          desc: "Large-scale earth moving and excavation projects with modern equipment and experienced operators.",
         },
         temporary: {
           title: "Temporary Facilities",
@@ -423,21 +347,9 @@ const translations = {
         desc: "Our Civil Construction Division handles a wide range of infrastructure projects:",
         items: [
           "Infrastructure development",
-          "Earthworks and excavation",
           "Substation civil works",
           "Building renovation and restoration",
           "Site preparation and development",
-        ],
-      },
-      telecom: {
-        title: "Telecommunication Division",
-        desc: "Our Telecommunication Division provides cutting-edge telecom solutions:",
-        items: [
-          "Tower erection and installation",
-          "OFC (Optical Fiber Cable) networking",
-          "GSM maintenance services",
-          "Network infrastructure development",
-          "Telecom equipment installation",
         ],
       },
     },
@@ -480,7 +392,7 @@ const translations = {
       title:
         "Wardat Almanazel General Contracting | Construction & Contracting Services in Saudi Arabia",
       description:
-        "Wardat Almanazel General Contracting - Leading construction and contracting company in Saudi Arabia specializing in civil, electrical, electromechanical, and telecom projects.",
+        "Wardat Almanazel General Contracting - Leading construction and contracting company in Saudi Arabia specializing in civil, electrical, and electromechanical projects.",
       ogTitle: "Wardat Almanazel General Contracting",
       ogDescription:
         "Leading construction and contracting company in Saudi Arabia",
