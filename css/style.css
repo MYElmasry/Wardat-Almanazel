@@ -693,15 +693,17 @@ html[dir="ltr"] .division-list li {
 }
 
 .contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 600px;
+  width: 100%;
 }
 
 .info-item {
@@ -1090,8 +1092,8 @@ html[dir="ltr"] .scroll-top {
     order: -1;
   }
 
-  .contact-wrapper {
-    grid-template-columns: 1fr;
+  .contact-info {
+    max-width: 100%;
   }
 
   .services-container {

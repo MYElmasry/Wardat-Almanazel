@@ -8,7 +8,6 @@ const mobileMenuToggle = document.getElementById("mobileMenuToggle");
 const navMenu = document.getElementById("navMenu");
 const navLinks = document.querySelectorAll(".nav-link");
 const scrollTopBtn = document.getElementById("scrollTop");
-const contactForm = document.getElementById("contactForm");
 const currentYear = document.getElementById("currentYear");
 const langBtn = document.getElementById("langBtn");
 const currentLang = document.getElementById("currentLang");
@@ -287,72 +286,6 @@ if (scrollTopBtn) {
 
 // ============================================
 // Contact Form Handling
-// ============================================
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const formMessage = document.getElementById("formMessage");
-    const formData = new FormData(contactForm);
-
-    // Get form values
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const phone = formData.get("phone");
-    const message = formData.get("message");
-
-    // Basic validation
-    if (!name || !email || !message) {
-      const errorMsg =
-        currentLanguage === "ar"
-          ? translations.ar.contact.form.error
-          : translations.en.contact.form.error;
-      showFormMessage(errorMsg, "error");
-      return;
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      const errorMsg =
-        currentLanguage === "ar"
-          ? translations.ar.contact.form.emailError
-          : translations.en.contact.form.emailError;
-      showFormMessage(errorMsg, "error");
-      return;
-    }
-
-    // Simulate form submission (for static site)
-    // In a real implementation, this would send data to a server
-    const successMsg =
-      currentLanguage === "ar"
-        ? translations.ar.contact.form.success
-        : translations.en.contact.form.success;
-    showFormMessage(successMsg, "success");
-
-    // Reset form
-    contactForm.reset();
-
-    // Hide message after 5 seconds
-    setTimeout(() => {
-      formMessage.style.display = "none";
-      formMessage.classList.remove("success", "error");
-    }, 5000);
-  });
-}
-
-// ============================================
-// Show Form Message
-// ============================================
-function showFormMessage(message, type) {
-  const formMessage = document.getElementById("formMessage");
-  formMessage.textContent = message;
-  formMessage.className = `form-message ${type}`;
-  formMessage.style.display = "block";
-
-  // Scroll to message
-  formMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
-}
 
 // ============================================
 // Lazy Loading Images (if needed)
