@@ -26,18 +26,21 @@ const translations = {
     },
     // Key Services
     keyServices: {
-      title: "خدماتنا الأساسية",
+      title: "اعمالنا",
       civil: {
         title: "البناء المدني",
         desc: "خدمات شاملة للبناء المدني والصيانة",
+        clickHere: "انقر هنا",
       },
       electrical: {
         title: "الأعمال الكهربائية",
         desc: "حلول كهربائية وكهرو ميكانيكية احترافية",
+        clickHere: "انقر هنا",
       },
       maintenance: {
         title: "الصيانة",
         desc: "خدمات صيانة وتجديد متخصصة",
+        clickHere: "انقر هنا",
       },
     },
     // Why Choose Us
@@ -226,14 +229,17 @@ const translations = {
       civil: {
         title: "Civil Construction",
         desc: "Comprehensive civil construction and maintenance services",
+        clickHere: "Click here",
       },
       electrical: {
         title: "Electrical Works",
         desc: "Professional electrical and electromechanical solutions",
+        clickHere: "Click here",
       },
       maintenance: {
         title: "Maintenance",
         desc: "Expert maintenance and renovation services",
+        clickHere: "Click here",
       },
     },
     // Why Choose Us

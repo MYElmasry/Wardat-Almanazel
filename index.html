@@ -50,8 +50,7 @@
       <div class="container">
         <div class="nav-wrapper">
           <div class="logo">
-            <i class="fas fa-building"></i>
-            <span>Wardat Almanazel</span>
+            <img src="Logo.jpeg" alt="Wardat Almanazel" />
           </div>
           <button
             class="mobile-menu-toggle"
@@ -133,9 +132,13 @@
     <!-- Key Services Highlights -->
     <section class="key-services">
       <div class="container">
-        <h2 data-i18n="keyServices.title">خدماتنا الأساسية</h2>
+        <h2 data-i18n="keyServices.title">اعمالنا</h2>
         <div class="services-grid">
-          <div class="service-card">
+          <div
+            class="service-card"
+            id="civilServiceCard"
+            style="cursor: pointer"
+          >
             <div class="service-icon">
               <i class="fas fa-hard-hat"></i>
             </div>
@@ -143,8 +146,15 @@
             <p data-i18n="keyServices.civil.desc">
               خدمات شاملة للبناء المدني والصيانة
             </p>
+            <small class="click-hint" data-i18n="keyServices.civil.clickHere"
+              >انقر هنا</small
+            >
           </div>
-          <div class="service-card">
+          <div
+            class="service-card"
+            id="electricalServiceCard"
+            style="cursor: pointer"
+          >
             <div class="service-icon">
               <i class="fas fa-bolt"></i>
             </div>
@@ -152,8 +162,17 @@
             <p data-i18n="keyServices.electrical.desc">
               حلول كهربائية وكهرو ميكانيكية احترافية
             </p>
+            <small
+              class="click-hint"
+              data-i18n="keyServices.electrical.clickHere"
+              >انقر هنا</small
+            >
           </div>
-          <div class="service-card">
+          <div
+            class="service-card"
+            id="maintenanceServiceCard"
+            style="cursor: pointer"
+          >
             <div class="service-icon">
               <i class="fas fa-tools"></i>
             </div>
@@ -161,6 +180,11 @@
             <p data-i18n="keyServices.maintenance.desc">
               خدمات صيانة وتجديد متخصصة
             </p>
+            <small
+              class="click-hint"
+              data-i18n="keyServices.maintenance.clickHere"
+              >انقر هنا</small
+            >
           </div>
         </div>
       </div>
@@ -484,7 +508,7 @@
               </div>
               <div class="info-content">
                 <h3 data-i18n="contact.phone">الهاتف</h3>
-                <p>+966 XX XXX XXXX</p>
+                <p>+966 50 304 7889</p>
               </div>
             </div>
             <div class="info-item">
@@ -497,7 +521,7 @@
               </div>
             </div>
             <a
-              href="https://wa.me/966XXXXXXXXX"
+              href="https://wa.me/966503047889"
               class="whatsapp-btn"
               target="_blank"
               rel="noopener noreferrer"
@@ -657,6 +681,397 @@
     <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
       <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Construction Gallery Modal -->
+    <div class="modal-overlay" id="constructionModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="carousel-container">
+          <button
+            class="carousel-btn carousel-prev"
+            id="carouselPrev"
+            aria-label="Previous image"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <button
+            class="carousel-btn carousel-next"
+            id="carouselNext"
+            aria-label="Next image"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="carousel-wrapper">
+            <div class="carousel-slide active">
+              <img
+                src="Assets/Construction/2.jpeg"
+                alt="Construction project 1"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/22.jpeg"
+                alt="Construction project 2"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/WhatsApp Image 2025-12-18 at 11.31.59 PM.jpeg"
+                alt="Construction project 3"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/WhatsApp Image 2025-12-18 at 11.31.58 PM.jpeg"
+                alt="Construction project 4"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/IMG-20260103-WA0335.jpg"
+                alt="Construction project 5"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/IMG-20260103-WA0329.jpg"
+                alt="Construction project 6"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/IMG-20260103-WA0324.jpg"
+                alt="Construction project 7"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/IMG-20260103-WA0325.jpg"
+                alt="Construction project 8"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/IMG-20260103-WA0326.jpg"
+                alt="Construction project 9"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/IMG-20260103-WA0315.jpg"
+                alt="Construction project 10"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/IMG-20260103-WA0321.jpg"
+                alt="Construction project 11"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Construction/IMG-20260103-WA0300.jpg"
+                alt="Construction project 12"
+              />
+            </div>
+          </div>
+          <div class="carousel-indicators" id="carouselIndicators"></div>
+          <div class="carousel-counter">
+            <span id="currentImage">1</span> / <span id="totalImages">12</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Electronics Gallery Modal -->
+    <div class="modal-overlay" id="electronicsModal">
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          id="electronicsModalClose"
+          aria-label="Close modal"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="carousel-container">
+          <button
+            class="carousel-btn carousel-prev"
+            id="electronicsCarouselPrev"
+            aria-label="Previous image"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <button
+            class="carousel-btn carousel-next"
+            id="electronicsCarouselNext"
+            aria-label="Next image"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="carousel-wrapper">
+            <div class="carousel-slide active">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.30 PM.jpeg"
+                alt="Electrical project 1"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.32 PM.jpeg"
+                alt="Electrical project 2"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.34 PM.jpeg"
+                alt="Electrical project 3"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.35 PM (1).jpeg"
+                alt="Electrical project 4"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.35 PM (2).jpeg"
+                alt="Electrical project 5"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.35 PM.jpeg"
+                alt="Electrical project 6"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.36 PM.jpeg"
+                alt="Electrical project 7"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.38 PM.jpeg"
+                alt="Electrical project 8"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.39 PM (1).jpeg"
+                alt="Electrical project 9"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.39 PM.jpeg"
+                alt="Electrical project 10"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.41 PM.jpeg"
+                alt="Electrical project 11"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.42 PM.jpeg"
+                alt="Electrical project 12"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Electronics/WhatsApp Image 2025-12-18 at 11.30.45 PM.jpeg"
+                alt="Electrical project 13"
+              />
+            </div>
+          </div>
+          <div
+            class="carousel-indicators"
+            id="electronicsCarouselIndicators"
+          ></div>
+          <div class="carousel-counter">
+            <span id="electronicsCurrentImage">1</span> /
+            <span id="electronicsTotalImages">13</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maintenance Gallery Modal -->
+    <div class="modal-overlay" id="maintenanceModal">
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          id="maintenanceModalClose"
+          aria-label="Close modal"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="carousel-container">
+          <button
+            class="carousel-btn carousel-prev"
+            id="maintenanceCarouselPrev"
+            aria-label="Previous image"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <button
+            class="carousel-btn carousel-next"
+            id="maintenanceCarouselNext"
+            aria-label="Next image"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="carousel-wrapper">
+            <div class="carousel-slide active">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.30.37 PM.jpeg"
+                alt="Maintenance project 1"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.00 PM (1).jpeg"
+                alt="Maintenance project 2"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.00 PM.jpeg"
+                alt="Maintenance project 3"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.04 PM.jpeg"
+                alt="Maintenance project 4"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.05 PM.jpeg"
+                alt="Maintenance project 5"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.06 PM.jpeg"
+                alt="Maintenance project 6"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.07 PM.jpeg"
+                alt="Maintenance project 7"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.08 PM.jpeg"
+                alt="Maintenance project 8"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.14 PM.jpeg"
+                alt="Maintenance project 9"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.15 PM.jpeg"
+                alt="Maintenance project 10"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.16 PM (1).jpeg"
+                alt="Maintenance project 11"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.16 PM (2).jpeg"
+                alt="Maintenance project 12"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.32.16 PM.jpeg"
+                alt="Maintenance project 13"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.34.33 PM (1).jpeg"
+                alt="Maintenance project 14"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.34.33 PM.jpeg"
+                alt="Maintenance project 15"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.34.34 PM.jpeg"
+                alt="Maintenance project 16"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.34.41 PM.jpeg"
+                alt="Maintenance project 17"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.34.44 PM.jpeg"
+                alt="Maintenance project 18"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.34.45 PM.jpeg"
+                alt="Maintenance project 19"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.34.46 PM.jpeg"
+                alt="Maintenance project 20"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.39.39 PM (1).jpeg"
+                alt="Maintenance project 21"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="Assets/Maintenance/WhatsApp Image 2025-12-18 at 11.39.39 PM.jpeg"
+                alt="Maintenance project 22"
+              />
+            </div>
+          </div>
+          <div
+            class="carousel-indicators"
+            id="maintenanceCarouselIndicators"
+          ></div>
+          <div class="carousel-counter">
+            <span id="maintenanceCurrentImage">1</span> /
+            <span id="maintenanceTotalImages">22</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="js/translations.js"></script>
